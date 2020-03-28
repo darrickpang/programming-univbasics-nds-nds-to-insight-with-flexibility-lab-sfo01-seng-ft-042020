@@ -70,8 +70,8 @@ def gross_per_studio(collection)
     studios = collection[x][:studio]
     result[studios] = 0
     y = 0
-    while y < collection[x][:movies].length do
-      result[studios] += collection[x][:movies][y][:worldwide_gross]
+    while y < collection[x][:title].length do
+      result[studios] += collection[x][:title][y][:worldwide_gross]
       arr.push(result[studios])
       y+= 1
     end
