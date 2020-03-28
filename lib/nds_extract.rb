@@ -6,18 +6,16 @@ require 'directors_database'
 
 def flatten_a_o_a(aoa)
   result = []
-  i = 0
-
-  while i < aoa.length do
-    k = 0
-    while k < aoa[i].length do
-      result << aoa[i][k]
-      k += 1
+  x = 0
+  while x < aoa.length do
+    y = 0
+    while y < aoa[x].length do
+      result.push(aoa[x][y])
+      y += 1
     end
-    i += 1
+    x += 1
   end
-
-  result
+  return result
 end
 
 def movie_with_director_name(director_name, movie_data)
