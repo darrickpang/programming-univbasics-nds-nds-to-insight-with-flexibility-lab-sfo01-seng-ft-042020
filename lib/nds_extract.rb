@@ -34,13 +34,13 @@ end
 def movies_with_director_key(name, movies_collection)
 
     x = 0
-    a_o_h_with_director_key =[]
+    arr =[]
 
-  while x < movies_collection.size do
-    a_o_h_with_director_key.push(movie_with_director_name(name, movies_collection[x]))
+  while x < movies_collection.length do
+    arr.push(movie_with_director_name(name, movies_collection[x]))
     x += 1
   end
-  return a_o_h_with_director_key
+  return arr
 end
 
 
