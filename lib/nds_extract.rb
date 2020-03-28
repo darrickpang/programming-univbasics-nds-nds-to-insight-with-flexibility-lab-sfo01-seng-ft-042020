@@ -47,7 +47,7 @@ end
 def gross_per_studio(collection)
   
   director_index = 0
-  studio_gross_totals = Hash.new
+  studio_gross_totals = {}
 
   while director_index < collection.size do
     if !( studio_gross_totals.has_key? 'collection[director_index][:studio]' )
