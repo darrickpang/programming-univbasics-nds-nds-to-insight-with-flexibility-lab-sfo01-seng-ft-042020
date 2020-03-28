@@ -67,10 +67,10 @@ def gross_per_studio(collection)
   result = {}
   x = 0 
   while x < collection.length do
-    director = nds[x][:name]
+    studio = collection[x][:studio]
     result[director] = 0
     y = 0
-    while y < nds[x][:movies].length do
+    while y < collection[x][:movies].length do
       result[director] += nds[x][:movies][y][:worldwide_gross]
       y+= 1
     end
