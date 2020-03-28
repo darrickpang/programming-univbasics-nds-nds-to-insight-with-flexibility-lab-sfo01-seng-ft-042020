@@ -53,7 +53,7 @@ def movies_with_director_key(name, movies_collection)
     a_o_h_with_director_key.push(movie_with_director_name(name, movies_collection[x]))
     x += 1
   end
-  a_o_h_with_director_key
+  return a_o_h_with_director_key
 end
 
 
