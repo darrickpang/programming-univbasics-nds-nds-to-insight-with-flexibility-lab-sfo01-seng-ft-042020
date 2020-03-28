@@ -46,10 +46,10 @@ def movies_with_director_key(name, movies_collection)
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
-   movie_index = 0
-  a_o_h_with_director_key = Array.new
+    x = 0
+    a_o_h_with_director_key =[]
 
-  while movie_index < movies_collection.size do
+  while x < movies_collection.size do
     a_o_h_with_director_key.push(movie_with_director_name(name, movies_collection[movie_index]))
     movie_index += 1
   end
@@ -72,7 +72,6 @@ def gross_per_studio(collection)
   director_index = 0
   studio_gross_totals = Hash.new
 
-  # Setting up studio hash with studio names
   while director_index < collection.size do
     if !( studio_gross_totals.has_key? 'collection[director_index][:studio]' )
       studio_gross_totals[collection[director_index][:studio]] = 0
