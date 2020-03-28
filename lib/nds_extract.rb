@@ -73,11 +73,12 @@ def gross_per_studio(collection)
     y = 0
     while y < collection[x][:movies].length do
       result[studios] += collection[x][:movies][y][:worldwide_gross]
+      arr.push(result[studios])
       y+= 1
     end
     x += 1
   end
-  return result
+  return arr
 end
 
 def movies_with_directors_set(source)
