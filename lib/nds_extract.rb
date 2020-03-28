@@ -50,8 +50,8 @@ def movies_with_director_key(name, movies_collection)
     a_o_h_with_director_key =[]
 
   while x < movies_collection.size do
-    a_o_h_with_director_key.push(movie_with_director_name(name, movies_collection[movie_index]))
-    movie_index += 1
+    a_o_h_with_director_key.push(movie_with_director_name(name, movies_collection[x]))
+    x += 1
   end
   a_o_h_with_director_key
 end
